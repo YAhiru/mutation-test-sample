@@ -1,0 +1,5 @@
+infection.json
+.idea
+.DS_Store
+logs
+vendor

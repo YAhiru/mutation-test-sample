@@ -1,0 +1,29 @@
+{
+  "source": {
+    "directories": [
+      "src"
+    ]
+  },
+  "timeout": 10,
+  "logs": {
+    "text": "./logs/infection/infection.log",
+    "summary": "./logs/infection/summary.log",
+    "perMutator": "./logs/infection/per-mutator.md",
+    "badge": {
+      "branch": "master"
+    }
+  },
+  "tmpDir": "./tmp",
+  "mutators": {
+    "@default": true,
+    "@function_signature": false,
+    "TrueValue": {
+      "ignore": [
+        "NameSpace\\*\\Class::method"
+      ]
+    }
+  },
+  "testFramework":"phpunit",
+  "initialTestsPhpOptions": "",
+  "testFrameworkOptions": "-vvv"
+}
